@@ -1,0 +1,10 @@
+sudo: true
+cache: pip
+language: python
+dist: xenial
+python: "3.7"
+install:
+  - pip install git+https://github.com/bel-enrichment/bel-enrichment.git
+  - pip install -e .
+script:
+  - hbp-semi-automated-curation compile --show-warnings
