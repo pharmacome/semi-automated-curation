@@ -10,7 +10,7 @@ mode using the following command:
 .. code-block:: sh
 
     $ git clone https://github.com/pharmacome/semi-automated-curation.git
-    $ cd results
+    $ cd semi-automated-curation
     $ pip install -e .
 
 It can be imported and used with the following. Note that it installs at a different name than the GitHub repository.
