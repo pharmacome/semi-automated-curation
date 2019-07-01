@@ -28,5 +28,5 @@ License
 
 Acknowledgements
 ----------------
-This work was done during the `Human Brain Pharmacome project <https://pharmacome.scai.fraunhofer.de>` funded by the
+This work was done during the `Human Brain Pharmacome project <https://pharmacome.scai.fraunhofer.de>`_ funded by the
 Fraunhofer Society's MAVO program.
