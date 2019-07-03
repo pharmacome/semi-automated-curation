@@ -1,18 +1,25 @@
-Semi-automated Curation Results
+Semi-Automated Curation Results
 ===============================
 This repository contains the results of semi-automated curation in the Human Brain Pharmacome project.
 
 Installation
 ------------
-This repository requires a particular package structure and can currently only be installed with pip in development
-mode using the following command:
+This repository can be installed from GitHub using pip with the following command:
 
 .. code-block:: sh
 
-    $ git clone https://github.com/pharmacome/semi-automated-curation.git
-    $ cd semi-automated-curation
+    $ pip install git+https://github.com/pharmacome/semi-automated-curation.git
+
+For developers, this repository can be cloned and installd with the following commands:
+
+.. code-block:: sh
+
+    $ git clone https://github.com/pharmacome/semi-automated-curation.git hbp-semi-automated-curation
+    $ cd hbp-semi-automated-curation
     $ pip install -e .
 
+Usage
+-----
 It can be imported and used with the following. Note that it installs at a different name than the GitHub repository.
 
 .. code-block:: python
@@ -20,6 +27,10 @@ It can be imported and used with the following. Note that it installs at a diffe
     >>> from hbp_semi_automated_curation import repository
     >>> graph = repository.get_graph()
     >>> graph.summarize()
+
+Content
+-------
+The curation can be found in the `src/curation` folder.
 
 License
 -------

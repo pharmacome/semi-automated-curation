@@ -30,11 +30,13 @@ AUTHOR_STRING = serialize_authors(AUTHORS)
 
 # Folder pointers
 HERE = os.path.abspath(os.path.dirname(__file__))
-GENES_DIRECTORY = os.path.join(HERE, 'genes')
+CURATION_DIRECTORY = os.path.join(HERE, 'curation')
+
+VERSION = '0.1.1'
 
 metadata = BELMetadata(
-    name='HBP Semi-automated Curation',
-    version='0.1.0',
+    name='HBP Semi-Automated Curation',
+    version=VERSION,
     description="This knowledge graph contains content generated with the semi-automated curation workflow"
                 "in the Human Brain Pharmacome project.",
     authors=AUTHOR_STRING,
@@ -43,11 +45,9 @@ metadata = BELMetadata(
 )
 
 repository = BELSheetsRepository(
-    directory=GENES_DIRECTORY,
+    directory=CURATION_DIRECTORY,
+    output_directory=HERE,
     metadata=metadata,
 )
 
 main = repository.build_cli()
-
-if __name__ == '__main__':
-    main()
