@@ -1,5 +1,5 @@
-Semi-Automated Curation Results
-===============================
+Semi-Automated Curation Results |zenodo|
+========================================
 This repository contains the results of semi-automated curation in the Human Brain Pharmacome project.
 
 Installation
@@ -41,3 +41,6 @@ Acknowledgements
 ----------------
 This work was done during the `Human Brain Pharmacome project <https://pharmacome.scai.fraunhofer.de>`_ funded by the
 Fraunhofer Society's MAVO program.
+
+.. |zenodo| image:: https://zenodo.org/badge/171466708.svg
+   :target: https://zenodo.org/badge/latestdoi/171466708
